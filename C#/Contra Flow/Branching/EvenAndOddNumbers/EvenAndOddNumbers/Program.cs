@@ -10,12 +10,19 @@ namespace EvenAndOddNumbers
     {
         private static void Main(string[] args)
         {
-            Console.Write("Please enter your number: ");
-            var number1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write(number1 % 2 == 0 ? "Your number ({0}) is even." : "Your number ({0}) is odd.", number1);
-            Console.ReadKey();
-            Console.Write("Done, press any key to escape program.");
-            Console.ReadKey();
+            Console.WriteLine("Please enter your number: ");
+            var userNumber = Convert.ToInt32(Console.ReadLine());
+            if (userNumber % 2 == 0)
+            {
+                Console.WriteLine("Your number {0} is even", userNumber);
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("Your number {0} is odd", userNumber);
+                Console.ReadKey();
+            }
+            Console.WriteLine("Done");
         }
     }
 }
