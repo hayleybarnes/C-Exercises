@@ -10,27 +10,25 @@ namespace RespondingToLargeNumber
     {
         static void Main(string[] args)
         {
-            Console.Write("Hello please select 2 numbers, press enter to continue.");
+            Console.Write("Hello please select 2 numbers, press enter to continue...");
             Console.ReadLine();
 
             int large = 0;
             int small = 0;
             Console.Write("Enter first number: ");
-            int number1 = Convert.ToInt32(Console.ReadLine());
+            int firstChoice = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter second number: ");
-            int number2 = Convert.ToInt32(Console.ReadLine());
-            if (number1 > number2)
+            int secondChoice = Convert.ToInt32(Console.ReadLine());
+            if (firstChoice > secondChoice)
             {
-                large = number1;
-                small = number2;
+                large = firstChoice;
             }
 
-            if (number1 < number2)
+            if (firstChoice < secondChoice)
             {
-                large = number2;
-                small = number1;
+                large = secondChoice;
+                
             }
-            Console.WriteLine("Your smallest number is: " + small);
             Console.WriteLine("Your largest number is: " + large);
             Console.ReadKey();
         }
