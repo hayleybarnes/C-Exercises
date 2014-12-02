@@ -10,12 +10,16 @@ namespace Palindrome
     {
         static void Main(string[] args)
         {
-            int number, remainder, sum = 0, temp;
-            Console.WriteLine("\n To find if your number is Palindrome or not! ");
-            Console.Write("\n Enter a number: ");
+            int number;
+            int remainder;
+            int sum = 0;
+            int temp;
+
+            Console.WriteLine("To find if your number is Palindrome or not! ");
+            Console.Write("\nEnter a number: ");
             number = Convert.ToInt32(Console.ReadLine());
             temp = number;
-            while (Convert.ToBoolean(number))
+            while (true)
             {
                 remainder = number % 10;  
                 number = number / 10; 
@@ -24,11 +28,11 @@ namespace Palindrome
             Console.WriteLine("\n The Reversed Number is: {0} \n", sum);
             if (temp == sum)
             {
-                Console.WriteLine("\n Number is Palindrome \n\n");
+                Console.WriteLine("\n Number is Palindrome \n");
             }
             else
             {
-                Console.WriteLine("\n Number is not a palindrome \n\n");
+                Console.WriteLine("\n Number is not a palindrome \n");
             }
             Console.ReadLine();
         }

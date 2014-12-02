@@ -10,19 +10,18 @@ namespace DateAndTime
     {
         static void Main(string[] args)
         {
-            //Write a program that outputs the current date and time
-            //Console.WriteLine("Click to see date and time!");
-            //Console.ReadKey();
-            //DateTime thisDay = DateTime.Now;
-            //Console.WriteLine(thisDay.ToString());
-            //Console.ReadKey();
-            //Console.WriteLine("Done, press any key to finish!");
-            //Console.ReadKey();
-            Console.WriteLine("Click to see the time");
-            DateTime goodDateHolder = DateTime.Now;
-         
-            Console.WriteLine(goodDateHolder.ToString("MM/dd/yyyy"));
- 
+            //Write a program that outputs the current date 
+            Console.WriteLine("Date:");
+            Console.WriteLine(DateTime.Today.ToString("M/d/yyyy"));
+            Console.ReadKey();
+
+            //current time
+            Console.WriteLine("Time:");
+            Console.WriteLine(DateTime.Now.ToString("H:mm"));
+            Console.ReadKey();
+
+            Console.WriteLine("Done, press any key to finish!");
+            Console.ReadKey();
         }
     }
 }
