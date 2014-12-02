@@ -9,19 +9,22 @@ namespace BasicDataTypes
 
     class program
     {
-        static int Main()
+        static void Main()
         {
+
             //Write a dice simulator
             Console.WriteLine("Please roll the dice, press any key");
             Console.WriteLine();
-            Random rndNumbers = new Random();
-            int rndNumber = rndNumbers.Next(0, 7);
-            Console.ReadKey();
-            Console.WriteLine("Your Number is : {0}", rndNumber);
-            Console.ReadKey();
-            Console.WriteLine("Done, press any key to finish!");
-            Console.ReadKey();
-            return 0;
+            
+            for (int i = 0; i <= 100; i++ )
+            {
+                Random diceNumbers = new Random();
+                int diceThrow = diceNumbers.Next(1, 7);
+                Console.WriteLine(diceThrow);
+                Console.ReadLine();
+                diceThrow = diceNumbers.Next(1, 7);
+                
+            }
         }
     }
-}
+}}
