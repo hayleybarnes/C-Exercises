@@ -12,30 +12,31 @@ namespace Palindrome
         {
             int number;
             int remainder;
-            int sum = 0;
+            int sum = 0
             int temp;
 
-            Console.WriteLine("To find if your number is Palindrome or not! ");
-            Console.Write("\nEnter a number: ");
+
+
+            Console.WriteLine("\n To find if your number is Palindrome or not! ");
+            Console.Write("\n Enter a number: ");
             number = Convert.ToInt32(Console.ReadLine());
             temp = number;
-            while (true)
+            while (Convert.ToBoolean(number))
             {
-                remainder = number % 10;  
-                number = number / 10; 
-                sum = sum * 10 + remainder; 
+                remainder = number % 10;
+                number = number / 10;
+                sum = sum * 10 + remainder;
             }
             Console.WriteLine("\n The Reversed Number is: {0} \n", sum);
             if (temp == sum)
             {
-                Console.WriteLine("\n Number is Palindrome \n");
+                Console.WriteLine("\n Number is Palindrome \n\n");
             }
             else
             {
-                Console.WriteLine("\n Number is not a palindrome \n");
+                Console.WriteLine("\n Number is not a palindrome \n\n");
             }
             Console.ReadLine();
         }
     }
 }
-       

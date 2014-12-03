@@ -8,23 +8,25 @@ namespace Branching
 {
     class Program
     {
-        static int Main()
+        static void Main()
         {
             //Write a program where the computer chooses a number and the user guesses
-            Console.WriteLine("Guess a number from 1-100?");
-            Console.WriteLine("What is your number?");
-            String number = Console.ReadLine();
-            Console.WriteLine("Your number is," + number);
-            Console.WriteLine();
-            Random rndNumbers = new Random();
-            int rndNumber = rndNumbers.Next(1, 100);
-            Console.ReadKey();
-            Console.WriteLine("Computer number is, {0}", rndNumber);
-            Console.ReadKey();
+            Console.WriteLine("Guess a number from 1-10?");
 
+            int playerNumber = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine();
+
+            Random randomNumber = new Random();
+            int numberToGuess = randomNumber.Next(1, 10);
+
+            if (playerNumber == numberToGuess)
+            {
+                Console.WriteLine("You've won the game!");        
+            }
             Console.WriteLine("Done, press any key to finish!");
             Console.ReadKey();
-            return 0;
         }
+
     }
 }
