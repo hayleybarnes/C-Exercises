@@ -10,17 +10,18 @@ namespace IsoscelesTriangle
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Click to see your right isosceles triangle");
+            Console.WriteLine("Click to see your isosceles triangle");
             Console.ReadKey();
             int i;
             int j;
             for (i = 0; i < 4; i++)
             {
                 for (j = 0; j < i; j++)
-                    Console.Write("*");
+                Console.Write("*");
                 Console.WriteLine();
             }
             Console.ReadKey();
+            
         }
     }
 }
