@@ -10,25 +10,25 @@ namespace Palindrome
     {
         static void Main(string[] args)
         {
-            int number;
-            int remainder;
-            int sum = 0
-            int temp;
+            int numberUserChoice;
+            int remainderNumber;
+            int reversedNumber = 0;
+            int tempNumber;
 
 
 
             Console.WriteLine("\n To find if your number is Palindrome or not! ");
             Console.Write("\n Enter a number: ");
-            number = Convert.ToInt32(Console.ReadLine());
-            temp = number;
-            while (Convert.ToBoolean(number))
+            numberUserChoice = int.Parse(Console.ReadLine());
+            tempNumber = numberUserChoice;
+            while (numberUserChoice > 0)
             {
-                remainder = number % 10;
-                number = number / 10;
-                sum = sum * 10 + remainder;
+                remainderNumber = numberUserChoice % 10;
+                numberUserChoice = numberUserChoice / 10;
+                reversedNumber = reversedNumber * 10 + remainderNumber;
             }
-            Console.WriteLine("\n The Reversed Number is: {0} \n", sum);
-            if (temp == sum)
+            Console.WriteLine("\n The Reversed Number is: {0} \n", reversedNumber);
+            if (tempNumber == reversedNumber)
             {
                 Console.WriteLine("\n Number is Palindrome \n\n");
             }
