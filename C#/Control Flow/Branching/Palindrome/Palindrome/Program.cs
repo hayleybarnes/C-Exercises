@@ -14,8 +14,9 @@ namespace Palindrome
 
             Console.WriteLine("\n To find if your number is Palindrome or not! ");
             Console.Write("\n Enter a number: ");
+
             int numberUserChoice = int.Parse(Console.ReadLine());
-            int tempNumber = numberUserChoice;            
+            int digitsToProcess = numberUserChoice;            
             int reversedNumber = 0;
 
             while (numberUserChoice > 0)
@@ -25,7 +26,7 @@ namespace Palindrome
                 reversedNumber = reversedNumber * 10 + remainderNumber;
             }
             Console.WriteLine("\n The Reversed Number is: {0} \n", reversedNumber);
-            if (tempNumber == reversedNumber)
+            if (digitsToProcess == reversedNumber)
             {
                 Console.WriteLine("\n Number is Palindrome \n\n");
             }

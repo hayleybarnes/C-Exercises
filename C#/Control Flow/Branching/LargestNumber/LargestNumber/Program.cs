@@ -12,13 +12,12 @@ namespace RespondingToLargeNumber
         {
             Console.Write("Hello please select 2 numbers, press enter to continue...");
             Console.ReadLine();
-
-            int large = 0;
-            int small = 0;
+      
             Console.Write("Enter first number: ");
             int firstChoice = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter second number: ");
             int secondChoice = Convert.ToInt32(Console.ReadLine());
+            int large = 0;
             if (firstChoice > secondChoice)
             {
                 large = firstChoice;
@@ -26,10 +25,10 @@ namespace RespondingToLargeNumber
 
             if (firstChoice < secondChoice)
             {
-                large = secondChoice;
+              large = secondChoice;
                 
             }
-            Console.WriteLine("Your largest number is: " + large);
+            Console.WriteLine("The largest number is: " +  large);
             Console.ReadKey();
         }
     }
