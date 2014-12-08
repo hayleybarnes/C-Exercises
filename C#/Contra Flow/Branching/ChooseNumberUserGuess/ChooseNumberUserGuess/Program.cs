@@ -22,9 +22,9 @@ namespace Branching
 
             if (playerNumber == numberToGuess)
             {
-                Console.WriteLine("You've won the game!");        
+                Console.WriteLine("Well done. You've won the game!");        
             }
-            Console.WriteLine("Done, press any key to finish!");
+            Console.WriteLine("Never guessed the right number, press any key to finish!");
             Console.ReadKey();
         }
 
