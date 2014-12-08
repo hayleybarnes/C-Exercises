@@ -10,20 +10,16 @@ namespace Palindrome
     {
         static void Main(string[] args)
         {
-            int numberUserChoice;
-            int remainderNumber;
-            int reversedNumber = 0;
-            int tempNumber;
-
+         
 
 
             Console.WriteLine("\n To find if your number is Palindrome or not! ");
             Console.Write("\n Enter a number: ");
-            numberUserChoice = int.Parse(Console.ReadLine());
-            tempNumber = numberUserChoice;
-            while (numberUserChoice > 0)
+            int numberUserChoice = int.Parse(Console.ReadLine());
+            int tempNumber = numberUserChoice;
+            while (numberUserChoice > int reversedNumber = 0)
             {
-                remainderNumber = numberUserChoice % 10;
+                int remainderNumber = numberUserChoice % 10;
                 numberUserChoice = numberUserChoice / 10;
                 reversedNumber = reversedNumber * 10 + remainderNumber;
             }
