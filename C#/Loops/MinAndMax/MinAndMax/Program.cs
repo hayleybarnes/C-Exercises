@@ -10,6 +10,7 @@ namespace MinAndMax
     {
         static void Main()
      {
+         Console.WriteLine("Pick 10 numbers:");
          int currentMaxValue = Int32.MinValue;
          int currentMinValue = Int32.MaxValue;
          for (int i = 0; i < 10; i++)
@@ -29,7 +30,7 @@ namespace MinAndMax
              }
          }
 
-             Console.WriteLine("Large Number: {0} Smallest Number: {1}", currentMaxValue, currentMinValue);
+             Console.WriteLine("Max: {0} Min: {1}", currentMaxValue, currentMinValue);
 
              Console.ReadKey();
          
