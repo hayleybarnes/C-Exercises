@@ -14,6 +14,7 @@ namespace Palindrome
 
             Console.WriteLine("\n To find if your number is Palindrome or not! ");
             Console.Write("\n Enter a number: ");
+            int number
 
             int numberUserChoice = int.Parse(Console.ReadLine());
             int digitsToProcess = numberUserChoice;            
@@ -37,4 +38,5 @@ namespace Palindrome
             Console.ReadLine();
         }
     }
+
 }
