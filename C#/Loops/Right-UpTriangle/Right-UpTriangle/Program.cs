@@ -10,7 +10,7 @@ namespace Right_UpTriangle
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Pascal Triangle:");
+            Console.WriteLine("Enter a number:");
             int numberChoice = Int32.Parse(Console.ReadLine());
 
             for (int i = 1; i <= numberChoice; i++)
