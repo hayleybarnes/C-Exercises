@@ -11,13 +11,11 @@ namespace Right_UpTriangle
         static void Main(string[] args)
         {
             Console.WriteLine("Pascal Triangle:");
-            Console.ReadKey();
+            int numberChoice = Int32.Parse(Console.ReadLine());
 
-            int sizeOfTriangle = 12;
-
-            for (int i = 1; i <= sizeOfTriangle; i++)
+            for (int i = 1; i <= numberChoice; i++)
             {
-                for (int j = 1; j <= sizeOfTriangle - i; j++)
+                for (int j = 1; j <= numberChoice - i; j++)
                     Console.Write(" ");
                 for (int x = 1; x <= i; x++)
                     Console.Write(" *");
