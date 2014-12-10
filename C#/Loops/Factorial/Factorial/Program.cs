@@ -10,15 +10,14 @@ namespace Factorial
     {
         static void Main(string[] args)
         {
-        int i, numberChosen, factorialNumber;
-            Console.WriteLine("Pick a number you want to find the factorial of...");
-            numberChosen= int.Parse(Console.ReadLine());
-            factorialNumber = numberChosen;
-            for (i = numberChosen - 1; i >=1; i --)
+            Console.WriteLine("Pick a number:");
+            int numberChosen= int.Parse(Console.ReadLine());
+            int factorialNumber = numberChosen;
+            for (int i = numberChosen - 1; i >=1; i--)
             {
                 factorialNumber = factorialNumber * i;
             }
-            Console.WriteLine("\n Factorial of your number is: " +factorialNumber);
+            Console.WriteLine("Factorial of your number is: " +factorialNumber);
             Console.ReadLine();
         }
     }
