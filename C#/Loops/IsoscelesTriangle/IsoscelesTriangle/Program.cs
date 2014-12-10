@@ -10,13 +10,12 @@ namespace IsoscelesTriangle
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Click to see your isosceles triangle");
-            Console.ReadKey();
-            int i;
-            int j;
-            for (i = 0; i < 4; i++)
+            Console.WriteLine("Enter a number:");
+            int numberChoice = Int32.Parse(Console.ReadLine());
+        
+            for (int i = 0; i <= numberChoice; i++)
             {
-                for (j = 0; j < i; j++)
+                for (int j = 0; j < i; j++)
                 Console.Write("*");
                 Console.WriteLine();
             }
